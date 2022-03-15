@@ -51,6 +51,10 @@ window.onload = () => {
     div[0].innerText = `I live in Princeton, New Jersey, and it's currently ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()} here.`;
   }, 1000);
 
+//Bonus A
 
+const img = document.createElement("img")
+img.setAttribute("src","./sample.jpg")
+h1.append(img)
 
 };
