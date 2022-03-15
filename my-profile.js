@@ -3,7 +3,7 @@ window.onload = () => {
   h1.setAttribute("id", "myName");
   const names = document.createTextNode("Paul and Andy");
   h1.appendChild(names);
-  document.body.appendChild(names);
+  document.body.appendChild(h1);
 
   const ul = document.createElement("ul");
   const liArray = ["Lives in New Jersey.", "Paul has a dog named Gregor.", "Lives in Florida.", "Andy has a dog named Jake."]
@@ -20,7 +20,16 @@ window.onload = () => {
     let details = document.createTextNode(text)
     li.appendChild(details)
     document.body.appendChild(ul).appendChild(li)
+    li.setAttribute("class","detail")
   })
   // ul.innerHTML += newLi;
   // console.log(document.querySelectorAll("li"))
+
+//Phase 2
+
+h1.setAttribute("class","name")
+ul.setAttribute("class","my-details")
+
+
+
 };
